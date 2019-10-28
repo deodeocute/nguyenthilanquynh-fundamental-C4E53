@@ -1,5 +1,5 @@
-let count = 0
-while (count < 100){
+
+while (true){
 let a = prompt("Nhập 1 trong 4 chữ c , r , u , d (create / read / update / delate ) ").toLowerCase()
 let menu = ["chim" , "chuồn chuồn","cá" , "mèo" , "sóc" , "chuột" ]
 
@@ -34,7 +34,8 @@ if ( a == "c"){
             }
         else{
         alert("lỗi rồi")   }  
-}else if (a == "d"){
+        }
+    }else if (a == "d"){
     let de = prompt("Muốn nhập theo i hay v ? ")
     if (de == "i"){
         vitri = Number(prompt("Nhập vào vị trí"))
@@ -55,7 +56,5 @@ if ( a == "c"){
     }
 }else{
     alert("Lỗi cú pháp rồi em ơiiii")
-    loop = false
-}
-}
+    }
 }
