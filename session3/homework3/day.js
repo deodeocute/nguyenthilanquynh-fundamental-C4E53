@@ -1,5 +1,8 @@
+let count = 0
+while (count < 100){
 let a = prompt("Nhập 1 trong 4 chữ c , r , u , d (create / read / update / delate ) ").toLowerCase()
 let menu = ["chim" , "chuồn chuồn","cá" , "mèo" , "sóc" , "chuột" ]
+
 if ( a == "c"){
     let them = prompt("Muốn thêm con gì vào shop động vật ? ")
     menu.push(them)
@@ -29,8 +32,8 @@ if ( a == "c"){
             for(i = 0 ; i < menu.length ;i++ ){
             console.log(`${i+1}  ${menu[i]}`)} 
             }
-            else{
-            alert("lỗi rồi")   }  
+        else{
+        alert("lỗi rồi")   }  
 }else if (a == "d"){
     let de = prompt("Muốn nhập theo i hay v ? ")
     if (de == "i"){
@@ -38,7 +41,7 @@ if ( a == "c"){
         if (0 <= vitri && vitri < menu.length){
             menu.splice(vitri,1)
             for(i = 0 ; i < menu.length ;i++ ){
-                console.log(`${i+1}  ${menu[i]}`)} 
+            console.log(`${i+1}  ${menu[i]}`)} 
         }else {alert("Lỗi rồi nhá")}
     }else if (de == "v"){
         let babe = prompt("Nhập con muốn xóa ")
@@ -52,5 +55,7 @@ if ( a == "c"){
     }
 }else{
     alert("Lỗi cú pháp rồi em ơiiii")
+    loop = false
+}
 }
 }
