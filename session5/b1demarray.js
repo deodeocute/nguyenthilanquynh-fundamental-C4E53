@@ -15,17 +15,16 @@ arr.forEach(element => {
     if(!isExist(ans, element)) ans.push(element);
 });
 return ans;}
-let count = 0
 var indices = [];
 for (i= 0 ; i< ans.length ; i++){
+    let count = 0
     var element = ans[i];
-var idx = arr.indexOf(element);
-while (idx != -1) {
+    var idx = arr.indexOf(element);
+    while (idx != -1) {
     indices.push(idx)
     idx = arr.indexOf(element, idx + 1);
     count ++
-}
-
-    console.log(`${element} : ${indices.length}`);
+    }
+console.log(`${element} : ${count}`);
 
 }
