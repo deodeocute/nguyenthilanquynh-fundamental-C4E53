@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,11 +27,56 @@
             <button id="times" class="ops">*</button>
     <br />
             <button class="num" id="0">0</button>
-            <button class="num" id=".">.</button>
+            <button class="num" id="AC">AC</button>
             <button id="equals" class="equals" data-result="">=</button>
             <button id="divided by" class="ops">/</button>
     <br />
 
     <script src="calculator.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="calculator.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div id="calculator">
+    <div id="calculator_body">
+      <input id="screen" type="text" value="0" disabled>
+      <div id="keyboard">
+        <button id="btn_AC">AC</button>
+        <div id="operators">
+          <button>+</button>
+          <button>-</button>
+          <button>*</button>
+          <button>/</button>
+          <button id="btn_equal">=</button>
+        </div>
+        <div id="numbers">
+            <br>
+          <button>0</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <br>
+          <br>
+          <button>5</button>
+          <button>6</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="calculator.js"></script>
 </body>
 </html>
